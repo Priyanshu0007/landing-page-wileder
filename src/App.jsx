@@ -1,6 +1,7 @@
 import './App.scss'
 import Hero from './components/hero-section'
 import Navbar from './components/navbar'
+import Subsection from './components/subsection'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Navbar/>
       <Hero/>
+      <Subsection/>
     </div>
   )
 }
