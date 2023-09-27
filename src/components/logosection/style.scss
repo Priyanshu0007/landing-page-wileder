@@ -64,7 +64,6 @@
 .boxs { 
     animation: rotateAndScale 4s linear infinite;
   }
-
 @keyframes rotateAndScale {
     0%, 100% {
       transform: rotate(0deg) scale(1);
