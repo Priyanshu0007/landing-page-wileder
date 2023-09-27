@@ -1,0 +1,100 @@
+
+
+.footer {
+    width: 100%;
+    height: 20%;
+    background-color: #5D6273;
+    position: absolute;
+    margin-top: 200%;
+    padding-bottom: 0;
+}
+.footer-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .footer-logo {
+        width: 130px;
+        align-items: center;
+        @media only screen and (max-width: 768px) {
+            width: 150px;
+        }
+        img {
+            display: block;
+            width: 150%;
+            margin-bottom: 10%;
+        }
+    }
+    
+    .footer-menu-items {
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        .footer-menu-item {
+            font-size: 12px;
+            font-weight: 400;
+            color: white;
+            margin: 0 10px;
+            cursor: pointer;
+            @media only screen and (max-width: 768px) {
+                margin: 0 12.5px;
+                font-size: 18px;
+                font-weight: 400;
+            }
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+    .social-icons {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        transform: scale(0.7);
+        @media only screen and (max-width: 768px){
+            margin-top: 30px;
+            transform: scale(1);
+        }
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            margin: 0 12.5px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+    .bottom-bar {
+        width: 70%;
+        height: 50px;
+        border-top: 4px solid rgb(255, 255, 255);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        flex-direction: column;
+        @media only screen and (max-width: 768px) {
+            margin-top: 75px;
+            height: 75px;
+        }
+        .copyright-text {
+            color: #777777;
+            font-size: 12px;
+            font-weight: 400;
+            @media only screen and (max-width: 768px) {
+                font-size: 14px;
+            font-weight: 400;
+            }
+        }
+    }
+}

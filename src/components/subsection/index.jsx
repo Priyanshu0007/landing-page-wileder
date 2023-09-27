@@ -4,6 +4,7 @@ import React2 from "../../assets/Rectangle2.png"
 import React3 from "../../assets/Rectangle3.png"
 const Subsection = () => {
   return (
+    <div className="Box">
     <div className="cont">
     <div className="box"><div className="rectangle" /></div>
     <div className="label">
@@ -15,6 +16,7 @@ const Subsection = () => {
         <img src={React1} alt="img1"/>
         <img src={React2} alt="img1"/>
         <img src={React3} alt="img1"/>
+    </div>
     </div>
     </div>
   )

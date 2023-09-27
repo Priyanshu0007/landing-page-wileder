@@ -1,0 +1,78 @@
+.sectio{
+    margin-top: 155%;
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff;
+
+    .rectangl {
+        z-index: 4;
+        height: 50%;
+        width: 100%;
+        background-color: #fffefe;
+        position: absolute;
+        z-index: -20;
+        background-position: 50% 50%;
+        background-size: cover;
+        height: 440px;
+        width: 750px;
+        
+    }
+    .boxs{
+        z-index: 5;
+        display: inline-block;
+        justify-content: center;
+        height: fit-content;
+        width: fit-content;
+        margin-left: 40%;
+        //width: 0;
+            //height: 0;
+            
+            border-top: 100px solid #8BFF54;
+            border-right: 100px solid #E9FF60;
+            border-bottom: 100px solid #FF5252;
+            border-left: 100px solid #6587FF;
+            transition: transform 0.5s, width 0.5s, height 0.5s; // Add smooth transitions
+
+             &.rotate {
+            transform: rotate(360deg) scale(1.5); // Rotate 360 degrees and scale by 1.5
+            }
+
+    }
+}
+// .boxs {
+//     animation: rotate360 2s linear infinite;
+//   }
+  
+//   @keyframes rotate360 {
+//     from {
+//       transform: rotate(0deg);
+//     }
+//     to {
+//       transform: rotate(360deg);
+//     }
+//       0% {
+//         transform: rotate(0deg) scale(1);
+//       }
+//       50% {
+//         transform: rotate(180deg) scale(1.5);
+//       }
+//       100% {
+//         transform: rotate(360deg) scale(1);
+//       }
+//   }
+
+.boxs { 
+    animation: rotateAndScale 4s linear infinite;
+  }
+
+@keyframes rotateAndScale {
+    0%, 100% {
+      transform: rotate(0deg) scale(1);
+    }
+    50% {
+      transform: rotate(180deg) scale(1.5);
+    }
+  }
+  
+
+  

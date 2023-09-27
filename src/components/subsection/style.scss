@@ -1,5 +1,10 @@
+.Box{
+
 .cont{
-    height: fit-content;
+    min-height:100%;
+    min-width: 200px;
+
+    height: 100%;
     align-items: center;
     background-color: #ffffff;
     display: flex;
@@ -27,9 +32,9 @@
         width: 100%;
         z-index: -2;
         .rectangle {
-        margin-top: -200px;
+        margin-top: -1400px;
         background-color: #6a45ff;
-        height: 2000px;
+        height: 300%;
         left: 0;
         top: 0;
         width: 280px;
@@ -76,4 +81,5 @@
         }
     }
         
+}
 }
